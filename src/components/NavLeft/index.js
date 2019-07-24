@@ -2,6 +2,7 @@ import React from 'react';
 import { Menu, Icon, Button ,Switch} from 'antd';
 import MenuConfig from './../../config/menuConfig'
 import "./index.less"
+import {NavLink} from 'react-router-dom'
 
 const { SubMenu } = Menu;
 
@@ -21,10 +22,12 @@ class NavLeft extends React.Component {
                 return (
                     <SubMenu 
                     title={
+                            <NavLink to={item.key}>
                             <span>
                               <Icon type={item.icon} />
                               <span>{item.title}</span>
                             </span>
+                            </NavLink>
                         } key={item.key} >
                         {this.renderMenu(item.children)}
                     </SubMenu>
@@ -32,10 +35,12 @@ class NavLeft extends React.Component {
             }
             return <Menu.Item title={item.title} key={item.key}  >
                 {
+                    <NavLink to={item.key}>
                     <span>
                     <Icon type={item.icon} />
                     <span>{item.title}</span>
                     </span>
+                    </NavLink>
                 }
             </Menu.Item>;
         })

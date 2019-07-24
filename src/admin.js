@@ -21,8 +21,8 @@ class Admin extends React.Component {
                 <Col span={20} className="main">
                     <Headers/>
                     <Row className="content">
-                        {/* {this.props.children} */}
-                        <Home/>
+                        {this.props.children}
+                        {/* <Home/> */}
                     </Row>
                     <Footer className="footer" />
                 </Col>

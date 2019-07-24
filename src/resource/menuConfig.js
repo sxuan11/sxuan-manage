@@ -1,49 +1,52 @@
 const menuList = [
     {
         title:'首页',
-        key:'/home'
+        key:'/admin/home',
+        icon:'home',
     },
     {
         title:'UI',
         key:'/ui',
+        icon:'skin',
         children:[
             {
                 title:'按钮',
-                key:'/ui/buttons',
+                key:'/admin/ui/buttons',
             },
             {
                 title:'弹框',
-                key:'/ui/modals',
+                key:'/admin/ui/modals',
             },
             {
                 title:'Loading',
-                key:'/ui/loadings',
+                key:'/admin/ui/loadings',
             },
             {
                 title:'通知提醒',
-                key:'/ui/notification',
+                key:'/admin/ui/notification',
             },
             {
                 title:'全局Message',
-                key:'/ui/messages',
+                key:'/admin/ui/messages',
             },
             {
                 title:'Tab页签',
-                key:'/ui/tabs',
+                key:'/admin/ui/tabs',
             },
             {
                 title:'图片画廊',
-                key:'/ui/gallery',
+                key:'/admin/ui/gallery',
             },
             {
                 title:'轮播图',
-                key:'/ui/carousel',
+                key:'/admin/ui/carousel',
             }
         ]
     },
     {
         title:'表单',
         key:'/form',
+        icon:'form',
         children:[
             {
                 title:'登录',
@@ -58,6 +61,7 @@ const menuList = [
     {
         title:'表格',
         key:'/table',
+        icon:'table',
         children:[
             {
                 title:'基础表格',
@@ -71,15 +75,18 @@ const menuList = [
     },
     {
         title:'富文本',
-        key:'/rich'
+        key:'/rich',
+        icon:'copy',
     },
     {
         title:'城市管理',
-        key:'/city'
+        key:'/city',
+        icon:'compass',
     },
     {
         title:'订单管理',
         key:'/order',
+        icon:'check',
         btnList:[
             {
                 title:'订单详情',
@@ -93,15 +100,18 @@ const menuList = [
     },
     {
         title:'员工管理',
-        key:'/user'
+        key:'/user',
+        icon:'user',
     },
     {
         title:'车辆地图',
-        key:'/bikeMap'
+        key:'/bikeMap',
+        icon:'heat-map',
     },
     {
         title:'图标',
         key:'/charts',
+        icon:'apple',
         children:[
             {
                 title:'柱形图',
@@ -119,7 +129,8 @@ const menuList = [
     },
     {
         title:'权限设置',
-        key:'/permission'
+        key:'/permission',
+        icon:'property-safety',
     },
 ];
 export default menuList;
