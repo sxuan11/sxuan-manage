@@ -22,8 +22,8 @@ const menuList = [
                 key:'/admin/ui/loadings',
             },
             {
-                title:'通知提醒',
-                key:'/admin/ui/notification',
+                title:'走马灯',
+                key:'/admin/ui/carousel',
             },
             {
                 title:'全局Message',
@@ -37,10 +37,6 @@ const menuList = [
                 title:'图片画廊',
                 key:'/admin/ui/gallery',
             },
-            {
-                title:'轮播图',
-                key:'/admin/ui/carousel',
-            }
         ]
     },
     {

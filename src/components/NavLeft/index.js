@@ -21,13 +21,11 @@ class NavLeft extends React.Component {
             if(item.children){
                 return (
                     <SubMenu 
-                    title={
-                            <NavLink to={item.key}>
+                    title={                        
                             <span>
                               <Icon type={item.icon} />
                               <span>{item.title}</span>
                             </span>
-                            </NavLink>
                         } key={item.key} >
                         {this.renderMenu(item.children)}
                     </SubMenu>
@@ -55,19 +53,19 @@ class NavLeft extends React.Component {
             openKeys: ['/home'],
          }
     }
-    //   toggleCollapsed = () => {
-    //     this.setState({
-    //       collapsed: !this.state.collapsed,
-    //     });
-    //   };
-    //   changeTheme = value => {
-    //     const { theme } = this.state;
-    //     this.setState({
-    //       theme: theme === 'dark' ? 'light' : 'dark',
-    //       themed:!this.state.themed,
-    //     });
+      toggleCollapsed = () => {
+        this.setState({
+          collapsed: !this.state.collapsed,
+        });
+      };
+      changeTheme = value => {
+        const { theme } = this.state;
+        this.setState({
+          theme: theme === 'dark' ? 'light' : 'dark',
+          themed:!this.state.themed,
+        });
       
-    // };
+    };
     onOpenChange = openKeys => {
         const latestOpenKey = openKeys.find(key => this.state.openKeys.indexOf(key) === -1);
         if (this.rootSubmenuKeys.indexOf(latestOpenKey) === -1) {
@@ -83,7 +81,7 @@ class NavLeft extends React.Component {
 
     render() { 
         return ( 
-            <div style={{ width: 256 }}>
+            <div >
                 <div
                 className="logo"
                 >
@@ -91,12 +89,13 @@ class NavLeft extends React.Component {
                     <img src="/assets/logo.svg" alt="sxuan"></img>
                     <p>sxuan MS</p>
                     </a>
-                    {/* <Button className="btn1"  onClick={this.toggleCollapsed} style={{ marginBottom: 16 }}>
+                    <br/>
+                    <Button className="btn1"  onClick={this.toggleCollapsed} style={{ marginBottom: 16 }}>
                     <Icon type={this.state.collapsed ? 'right' : 'left'} />
                     </Button>
                     <Button className="btn2"  onClick={this.changeTheme} style={{ marginBottom: 16 }}>
                     <Icon type={this.state.themed ? 'menu-unfold' : 'menu-fold'} />
-                    </Button> */}
+                    </Button>
                 </div>
                 <Menu
                     className='menu'

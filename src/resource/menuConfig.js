@@ -22,8 +22,8 @@ const menuList = [
                 key:'/admin/ui/loadings',
             },
             {
-                title:'通知提醒',
-                key:'/admin/ui/notification',
+                title:'走马灯',
+                key:'/admin/ui/carousel',
             },
             {
                 title:'全局Message',
