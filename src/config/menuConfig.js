@@ -26,12 +26,12 @@ const menuList = [
                 key:'/admin/ui/carousel',
             },
             {
-                title:'全局Message',
-                key:'/admin/ui/messages',
+                title:'选择器',
+                key:'/admin/ui/chose',
             },
             {
-                title:'Tab页签',
-                key:'/admin/ui/tabs',
+                title:'表单',
+                key:'/admin/ui/form',
             },
             {
                 title:'图片画廊',
