@@ -90,7 +90,6 @@ export class register extends Component {
         }
         callback();
       };
-    
       handleWebsiteChange = value => {
         let autoCompleteResult;
         if (!value) {
@@ -100,7 +99,6 @@ export class register extends Component {
         }
         this.setState({ autoCompleteResult });
       };
-
 
     render() {
 

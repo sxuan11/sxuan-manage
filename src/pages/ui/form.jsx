@@ -2,6 +2,8 @@ import React from 'react';
 import Login from './form/login';
 import Register from './form/register';
 import Reg from './form/reg';
+import Advancedsearch from './form/advancedsearch';
+import Createform from './form/createform';
 import { Card   } from 'antd';
 
 const tabList = [
@@ -15,14 +17,18 @@ const tabList = [
     },
     {
       key: 'tab3',
-      tab: '高级搜索',
+      tab: '注册（中文）',
     },
     {
       key: 'tab4',
-      tab: '弹出式表单',
+      tab: '高级搜索',
     },
     {
       key: 'tab5',
+      tab: '弹出式表单',
+    },
+    {
+      key: 'tab6',
       tab: '校验组件',
     },
   ];
@@ -31,9 +37,14 @@ const tabList = [
     tab1: <Login/>,
     tab2: <Register/>,
     tab3: <Reg/>,
-    tab4: 123,
-    tab5: 123,
-  }
+    tab4: 
+    <div>
+    <Advancedsearch />
+    <div className="search-result-list">Search Result List</div>
+    </div>,
+    tab5: <Createform/>,
+    tab6: 123,
+  } 
 
 class form extends React.Component {
     
