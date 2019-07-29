@@ -12,6 +12,10 @@ import loadings from './pages/ui/loadings.jsx'
 import carousel from './pages/ui/carousel.jsx'
 import chose from './pages/ui/chose.jsx'
 import form from './pages/ui/form.jsx'
+import Login1 from './pages/form/login.jsx'
+import Reg from './pages/form/reg.jsx'
+import basictable from './pages/tables/normaltable.jsx'
+import advancetable from './pages/tables/advancedtables.jsx'
 
 import nomatch from './pages/nomatch/index'
 
@@ -30,6 +34,10 @@ class IRouter extends React.Component {
                         <Route path='/admin/ui/carousel' component={carousel}/>
                         <Route path='/admin/ui/chose' component={chose}/>
                         <Route path='/admin/ui/form' component={form}/>
+                        <Route path='/admin/form/login' component={Login1}/>
+                        <Route path='/admin/form/reg' component={Reg}/>
+                        <Route path='/admin/table/basic' component={basictable}/>
+                        <Route path='/admin/table/advanced' component={advancetable}/>
                         {/* <Route component={nomatch}/> */}
                     </Admin>
                     }/>

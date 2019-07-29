@@ -33,10 +33,6 @@ const menuList = [
                 title:'表单',
                 key:'/admin/ui/form',
             },
-            {
-                title:'图片画廊',
-                key:'/admin/ui/gallery',
-            },
         ]
     },
     {
@@ -46,11 +42,11 @@ const menuList = [
         children:[
             {
                 title:'登录',
-                key:'admin/form/login',
+                key:'/admin/form/login',
             },
             {
                 title:'注册',
-                key:'admin/form/reg',
+                key:'/admin/form/reg',
             }
         ]
     },
@@ -61,11 +57,11 @@ const menuList = [
         children:[
             {
                 title:'基础表格',
-                key:'/table/basic',
+                key:'/admin/table/basic',
             },
             {
                 title:'高级表格',
-                key:'/table/high',
+                key:'/admin/table/advanced',
             }
         ]
     },
